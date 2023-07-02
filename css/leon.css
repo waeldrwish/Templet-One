@@ -283,4 +283,98 @@ body {
 
 .portfolio .cards .container .card div p {
   font-weight: 300;
+  line-height: 1.8;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.about .container .about-body {
+  display: flex;
+}
+.about .container .about-body .image {
+  text-align: center;
+  position: relative;
+}
+.about .container .about-body .image img{
+  max-width: 100%;
+}
+.about .container .about-body .image::before {
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 80px);
+  top: -40px;
+  left: -20px;
+  z-index: -1;
+}
+
+.about .container .about-body .image::after {
+  content: "";
+  top: -40px;
+  position: absolute;
+  width: 120px;
+  height: 200px;
+  border-left: 80px solid var(--main-color);
+  border-bottom: 80px solid var(--main-color);
+  z-index: -1;
+  right: -150px;
+}
+
+.about .container .about-body .about-text {
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 40vh;
+}
+
+.about .container .about-body .about-text .t1 {
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.about .container .about-body .about-text hr {
+  width: 40%;
+  display: inline-block;
+  border-color: var(--main-color);
+}
+.about .container .about-body .about-text .t2 {
+  font-weight: 300;
+  color: #777;
+  line-height: 1.8;
+}
+
+.contact{
+  background-color: #f6f6f6;
+}
+
+.contact .container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact .container .contact-form{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contact .container .contact-form h2{
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.contact .container .contact-form h3{
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 800;
+}
+.footer{
+  background-color: var(--secondary-color);
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  color: #f6f6f6;
+  padding: 20px;
 }
